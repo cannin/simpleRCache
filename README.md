@@ -1,10 +1,12 @@
-# R package: R.cache
+# simpleRCache
 
-Stable release available via [CRAN](http://cran.r-project.org/package=R.cache).  Install in R as:
+## Overview 
 
-```s
-install.packages('R.cache')
-```
+A package to do simple result caching in R based on Henrik Bengtsson's R.cache. The global environment is not considered when caching results simplifying moving files between multiple instances of R. Relies on more base functions than R.cache (e.g. cached results are saved using saveRDS/readRDS).
 
+## Installation
 
-R CMD check status: <a href="https://travis-ci.org/HenrikBengtsson/R.cache"><img src="https://travis-ci.org/HenrikBengtsson/R.cache.svg?branch=master" alt="Build status"></a>
+```R
+library("devtools");
+devtools::install_github("cannin/simpleRCache");
+```  
