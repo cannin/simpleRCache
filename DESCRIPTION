@@ -4,9 +4,9 @@ Description: A package to do simple result caching in R based on Henrik Bengtsso
   The global environment is not considered when caching results simplifying moving files between
   multiple instances of R. Relies on more base functions than R.cache (e.g. cached results are 
   saved using saveRDS/readRDS).
-Version: 0.0.2
-Authors@R: person("Augustin", "Luna", email="lunaa@cbio.mskcc.org", role=c("aut", "cre"))
+Version: 0.1
+Authors@R: person("Augustin", "Luna", email="lunaa@cbio.mskcc.org", role=c("aut", "cre")), person("Vinodh", "Rajapakse", email="vinodh.rajapakse at nih.gov", role=c("aut", "cre"))
 Depends: R (>= 3.1.1)
-License: LGPL
+License: LGPL + file LICENSE
 Imports:
     digest
