@@ -5,7 +5,10 @@ Description: A package to do simple result caching in R based on Henrik Bengtsso
   multiple instances of R. Relies on more base functions than R.cache (e.g. cached results are 
   saved using saveRDS/readRDS).
 Version: 0.1
-Authors@R: person("Augustin", "Luna", email="lunaa@cbio.mskcc.org", role=c("aut", "cre")), person("Vinodh", "Rajapakse", email="vinodh.rajapakse at nih.gov", role=c("aut", "cre"))
+Authors@R: c(
+  person("Augustin", "Luna", email="lunaa@cbio.mskcc.org", role=c("aut", "cre")), 
+  person("Vinodh", "Rajapakse", email="vinodh.rajapakse at nih.gov", role=c("aut", "cre"))
+  )
 Depends: R (>= 3.1.1)
 License: LGPL + file LICENSE
 Imports:
