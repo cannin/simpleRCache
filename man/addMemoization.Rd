@@ -4,15 +4,21 @@
 \alias{addMemoization}
 \title{Add Memoization to a Function}
 \usage{
-addMemoization(fcn)
+addMemoization(fcn, verbose = FALSE)
 }
 \arguments{
 \item{fcn}{the function to be memoized}
+
+\item{verbose}{show debugging information}
 }
 \value{
 memoized function
 }
 \description{
 Add Memoization to a Function
+}
+\examples{
+runifCached <- addMemoization(runif)
+
 }
 

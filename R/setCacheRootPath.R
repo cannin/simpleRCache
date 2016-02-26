@@ -1,6 +1,9 @@
 #' Set Cache Root Path
 #'
 #' @param path the cache root directory
+#' 
+#' @examples 
+#' setCacheRootPath()
 #'
 #' @export
 setCacheRootPath <- function(path="~/.simpleRCache") {

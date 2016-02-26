@@ -12,4 +12,8 @@ setCacheRootPath(path = "~/.simpleRCache")
 \description{
 Set Cache Root Path
 }
+\examples{
+setCacheRootPath()
+
+}
 

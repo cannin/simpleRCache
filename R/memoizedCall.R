@@ -4,7 +4,6 @@
 #' @param ... the arguments to the function
 #'
 #' @return result of memoized function
-#' @export
 #' 
 #' @importFrom digest digest
 memoizedCall <- function(fcn, ...) {
@@ -12,7 +11,7 @@ memoizedCall <- function(fcn, ...) {
   key <- list(fcn=deparse(fcn), ...)
   
   keyHash <- digest(key)
-  cat("CHECKSUM: ", keyHash, "\n")
+  #cat("CHECKSUM: ", keyHash, "\n")
   pathname <- file.path(getOption("simpleRCacheRoot"), paste0(keyHash, ".rds"))
   
   if(file.exists(pathname)) {

@@ -1,11 +1,17 @@
 #' Add Memoization to a Function
 #'
 #' @param fcn the function to be memoized
+#' @param verbose show debugging information
+#' 
+#' @examples 
+#' runifCached <- addMemoization(runif)
 #'
 #' @return memoized function
 #' @export
-addMemoization <- function(fcn) {
-  cat("In modified addMemoization()", sep = "\n")
+addMemoization <- function(fcn, verbose=FALSE) {
+  if(verbose) {
+    cat("In modified addMemoization()", sep = "\n")
+  }
   
   if (!is.function(fcn)) {
     stop("Argument 'fcn' is not a function");
