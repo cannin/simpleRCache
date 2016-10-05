@@ -17,4 +17,8 @@ result of memoized function
 \description{
 Call a Memoized Function
 }
+\note{
+If the environment variable DEBUG_SIMPLERCACHE is set, then the
+keyHash will be outputted. This can be used to identify cache RDS files.
+}
 
