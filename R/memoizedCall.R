@@ -14,12 +14,17 @@ memoizedCall <- function(fcn, ...) {
   key <- list(fcn=deparse(fcn), ...)
 
   keyHash <- digest(key)
+  filename <- keyHash
 
   if(Sys.getenv("DEBUG_SIMPLERCACHE") != "") {
     cat("keyHash: ", keyHash, "\n")
   }
+  
+  if(Sys.getenv("PREFIX_SIMPLERCACHE") != "") {
+    filename <- paste0(Sys.getenv("PREFIX_SIMPLERCACHE"), "_", keyHash)
+  }
 
-  pathname <- file.path(getOption("simpleRCacheRoot"), paste0(keyHash, ".rds"))
+  pathname <- file.path(getOption("simpleRCacheRoot"), paste0(filename, ".rds"))
 
   if(file.exists(pathname)) {
     res <- readRDS(pathname)

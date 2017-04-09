@@ -5,7 +5,8 @@ Description: Simple result caching in R based on Henrik
     results simplifying moving files between multiple instances of R. Relies on
     more base functions than R.cache (e.g. cached results are saved using saveRDS() 
     and readRDS()).
-Version: 0.3
+Version: 0.3.2
+Date: 2016-12-04
 Author: Augustin Luna, Vinodh Rajapakse
 Maintainer: Augustin Luna <lunaa@cbio.mskcc.org>
 Depends:
@@ -14,6 +15,7 @@ License: LGPL
 Imports:
     digest
 Suggests:
-    knitr    
-RoxygenNote: 5.0.1
-VignetteBuilder: knitr
+    knitr
+VignetteBuilder:
+    knitr
+RoxygenNote: 6.0.1
