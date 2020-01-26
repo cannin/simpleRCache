@@ -1,12 +1,11 @@
 Package: simpleRCache
 Title: Simple R Cache
-Description: Simple result caching in R based on Henrik
-    Bengtsson's R.cache. The global environment is not considered when caching
-    results simplifying moving files between multiple instances of R. Relies on
-    more base functions than R.cache (e.g. cached results are saved using saveRDS() 
-    and readRDS()).
+Description: Simple result caching in R based on R.cache. The global environment is not 
+    considered when caching results simplifying moving files between multiple instances 
+    of R. Relies on more base functions than R.cache (e.g. cached results are saved using 
+    saveRDS() and readRDS()).
 Version: 0.3.2
-Date: 2016-04-09
+Date: 2020-01-26
 Author: Augustin Luna, Vinodh Rajapakse
 Maintainer: Augustin Luna <lunaa@cbio.mskcc.org>
 Depends:
@@ -18,4 +17,4 @@ Suggests:
     knitr
 VignetteBuilder:
     knitr
-RoxygenNote: 6.0.1
+RoxygenNote: 7.0.2
